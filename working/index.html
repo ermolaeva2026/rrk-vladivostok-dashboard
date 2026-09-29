@@ -80,6 +80,16 @@
 .stage-date-label{display:none}.stage-legend{color:var(--muted);font-size:11px;margin:10px 0 16px}.stage-note{padding:12px 15px;border-left:3px solid var(--amber);background:var(--amber-soft);font-size:12px;margin:12px 0}
 @media(max-width:1100px){.stage-row{grid-template-columns:minmax(220px,2fr) 85px 95px 95px 100px}.stage-track,.stage-calendar{display:none}}
 @media(max-width:650px){.stage-row{grid-template-columns:1fr 1fr;gap:8px;padding:14px}.stage-head{display:none}.stage-name{grid-column:1/-1;font-size:13px}.stage-duration{grid-column:1}.stage-status{grid-column:2;grid-row:2}.stage-date-label{display:block;color:var(--muted);font-size:10px}.stage-start{grid-column:1}.stage-finish{grid-column:2}.stage-group>summary small{display:block;margin:4px 0 0}.stage-group>summary{font-size:16px}}
+/* Product detail tabs keep the four information columns without a Gantt area. */
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .calendar-scale,
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .gantt-cell{display:none}
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .roadmap-table{min-width:860px;width:100%}
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .roadmap-row{grid-template-columns:minmax(250px,1.4fr) minmax(240px,1.3fr) minmax(180px,.85fr) minmax(190px,.85fr)}
+@media(max-width:600px){
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .roadmap-table{min-width:875px}
+:is(#panel-restaurant,#panel-drc,#panel-patirums) .roadmap-row{grid-template-columns:250px 250px 185px 190px}
+}
+
 </style>
 </head>
 <body>
